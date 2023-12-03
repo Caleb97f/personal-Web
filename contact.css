@@ -1,22 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 20px;
+    background: #201f1f;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 150px;
+    height: 140px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #242223;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ffffff;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #fffbfb;
 }
 
 form {
@@ -26,19 +96,20 @@ form {
 
 label {
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 input,
 textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    align-items: center;
 }
 
 button {
@@ -47,9 +118,14 @@ button {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
+    width: 10%;
     cursor: pointer;
+   align-self: center;
     font-size: 16px;
+    transition: background-color 0.3s ease; /* Add transition for a smoother change */
+
 }
+
 
 button:hover {
     background-color: #45a049;
