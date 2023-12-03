@@ -160,3 +160,110 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+
+footer{
+    background-color: #111;
+}
+
+#footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+#socialicon{
+    display: flex;
+    justify-content: center;
+}
+
+#socialicon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: burlywood;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#socialicon a{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/* Hover Effect on social media icons*/ 
+#socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+#socialicons a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+
+#footerNav{
+    margin: 30px 0;
+}
+
+#footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+#footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#footerNav ul  li a:hover{
+    opacity: 1;
+}
+
+#foooterbottom p{
+    color: white;
+}
+
+#designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 8px 5px;
+}
+
+/* Add this to your style.css file */
+
+.footercontainer {
+    background-color: #333; /* Set your preferred background color */
+    color: #fff; /* Set your preferred text color */
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialicons a {
+    color: #fff; /* Set the color for social media icons */
+    margin-right: 10px; /* Adjust the spacing between icons */
+    text-decoration: none;
+    font-size: 20px; /* Set the font size for icons */
+}
+
+.fotterNav ul {
+    list-style: none;
+    display: flex;
+}
+
+.fotterNav li {
+    margin-right: 20px; /* Adjust the spacing between navigation links */
+}
+
+.footerBottom {
+    background-color: #222; /* Set your preferred background color for the bottom footer */
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Set your preferred text color for the bottom footer */
+}
